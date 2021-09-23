@@ -36,10 +36,10 @@ var pokemonRepository = (function () {
   };
 })();
 
-pokemonRepository.add({ name: 'Pikachu' });
+pokemonRepository.add({ name: 'Pikachu' ,height:1});
 console.log( pokemonRepository.getAll());
-document.write( pokemonRepository.getAll());
-
+//document.write( pokemonRepository.getAll());
+pokemonRepository.getAll().forEach(item=>document.write(`${item.name},${item.height}<br>`))
 // Access to IIEF Items
 /*let p = foreach(pokemonList.getAll()){
   console.log(p);
