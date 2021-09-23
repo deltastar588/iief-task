@@ -1,24 +1,24 @@
 var pokemonRepository = (function () {
   var pokemonList = [
     {
-      name: "bulbas",
-      height: 3,
-      type: ["grass"],
+      name: "Charmander",
+      height: 2,
+      type: ["fire"],
     },
     {
-      name: "kkk",
-      height: 2.1,
-      type: ["rrr"],
+      name: "Charizard",
+      height: 5.07,
+      type: ["fire", "flying"],
     },
     {
-      name: "hhh",
-      height: 1.7,
-      type: ["zzz"],
+      name: "Wartortle",
+      height: 3.03,
+      type: ["water"],
     },
     {
-      name: "aaa",
-      height: 2.7,
-      type: ["mmm"],
+      name: "Nidoqueen",
+      height: 4.03,
+      type: ["poison","ground"],
     },
   ];
 
@@ -36,10 +36,10 @@ var pokemonRepository = (function () {
   };
 })();
 
-pokemonRepository.add({ name: 'Pikachu' ,height:1});
+pokemonRepository.add({ name: 'Blastoise' ,height:5.03, type:["grass", "electric"]});
 console.log( pokemonRepository.getAll());
 //document.write( pokemonRepository.getAll());
-pokemonRepository.getAll().forEach(item=>document.write(`${item.name},${item.height}<br>`))
+pokemonRepository.getAll().forEach(item=>document.write(" Name: "+ `${item.name}, Hieght: ${item.height}, Type: ${item.type}<br>`))
 // Access to IIEF Items
 /*let p = foreach(pokemonList.getAll()){
   console.log(p);
